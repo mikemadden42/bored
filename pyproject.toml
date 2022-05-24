@@ -1,8 +1,13 @@
 [tool.poetry]
 name = "bored"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Michael Madden <mikemadden42@icloud.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/mikemadden42/bored"
+repository = "https://github.com/mikemadden42/bored"
+keywords = ["bored", "api"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
