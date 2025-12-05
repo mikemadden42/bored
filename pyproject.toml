@@ -1,24 +1,11 @@
-[tool.poetry]
+[project]
 name = "bored"
 version = "0.1.1"
 description = ""
-authors = ["Michael Madden <mikemadden42@icloud.com>"]
-license = "MIT"
-readme = "README.md"
-homepage = "https://github.com/mikemadden42/bored"
-repository = "https://github.com/mikemadden42/bored"
-keywords = ["bored", "api"]
-
-[tool.poetry.dependencies]
-python = "^3.9"
-requests = "^2.27.1"
-
-[tool.poetry.dev-dependencies]
-pytest = "^8.2.1"
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.32.5",
+]
 
 [tool.ruff]
 lint.select = [
@@ -39,4 +26,9 @@ lint.select = [
 lint.ignore = [
     # tests use assert
     "S101"
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.8",
 ]
